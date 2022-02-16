@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body{
+        align-items:center ;
+    }
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #ffd52d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  color: #140f1d;
+}
+
+.button:hover {background-color: #ffd52d}
+
+.button:active {
+  background-color: #ffd52d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+body{
+    margin-left: 708px; 
+    margin-top: 435px;
+    padding: 0;
+    background: #140f1d;
+    color :white;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.input {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background: none;
+    border: 4px solid #ffd52d;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #ffd52d;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 350px;
+    background: #272133;
+    border-radius: 10px;
+}
+i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #ffd52d;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+h1{
+    font-size: 22px;
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+ 
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #ffd52d;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+ul.categorychecklist {
+    list-style:none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+</style>
+</head>
+<body>
+
+    <div class="box">
+        <form name="search">
+            <input type="text" class="input" name="txt" 
+            onmouseout="document.search.txt.value = ''">
+        </form>
+            <i class="fas fa-search"></i>
+    </div>
+
+
+<h1>Rozšírené</h1>
+<ul>
+<label class="container">Ženy
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Muži
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Deti
+  <input type="checkbox">   
+  <span class="checkmark"></span>
+</label>
+<label class="container">Zvierata
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+</ul>
+<button class="button">Hľadať</button>
+</body>
+
+</html>
