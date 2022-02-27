@@ -1,6 +1,47 @@
 body{
-    background-color: rgb(88, 87, 87);
+    background-color: skyblue;
+    margin: 0;
 }
+.menu{
+    width: 100%;
+    background:rgb(255, 255, 255);
+    overflow: auto;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    line-height: 60px;  
+    margin-left: 500px;
+    
+    
+    
+}
+.menu li{
+    float: left;
+    background-color: white(184, 209, 209);
+    text-decoration: none;
+    width: 130px;
+    display: block;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+
+}
+.menu ul li {
+    background-color: white;
+    text-decoration: none;
+    width: 300px;
+    display: block;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+}
+
 h1{
     font-size: 150px;
     color: white;
@@ -17,4 +58,8 @@ h1{
       margin-left: 385px;
       font-size: 50px;
       margin-top: 0px;
+  }
+  a{
+      color: #000;
+      text-decoration: none;
   }
