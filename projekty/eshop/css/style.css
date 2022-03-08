@@ -3,9 +3,9 @@ body{
     margin: 0;
 }
 .menu{
-    width: 3000px;
+    width: 100%;
     background:black;
-    overflow: auto;
+    overflow: hidden;
 }
 .menu ul{
     margin: 0;
